@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "652208444890",
+    "firebase_url": "https://mygoa-4fe14.firebaseio.com",
+    "project_id": "mygoa-4fe14",
+    "storage_bucket": "mygoa-4fe14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652208444890:android:e137d31cdf1abdcc5bdce3",
+        "android_client_info": {
+          "package_name": "com.example.mygoa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652208444890-n0kedrgc9thqdj7n9e45p3od82qvlr01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mygoa",
+            "certificate_hash": "ba9fb4349717f9d71e9b80688467ee3eb02da458"
+          }
+        },
+        {
+          "client_id": "652208444890-vh8f694jsmn32mgbidnrdc9lone4atn3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mygoa",
+            "certificate_hash": "60344ba4ecbe1d88ce5f641aea438645fd3b0d33"
+          }
+        },
+        {
+          "client_id": "652208444890-s6b8d0ebpamnicqglv25811t0ii6iim6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHTpyMCBXWUvdUo1bmtrbQRy1pduxvq4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652208444890-s6b8d0ebpamnicqglv25811t0ii6iim6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
