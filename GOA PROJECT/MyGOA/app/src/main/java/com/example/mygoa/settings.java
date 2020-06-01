@@ -89,10 +89,9 @@ ImageView about;
                         .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 // Continue with delete
-                                user = FirebaseAuth.getInstance().getCurrentUser();
-                                String uuid=user.getUid();
-                                DatabaseReference DatabaseUnaffected= FirebaseDatabase.getInstance().getReference("Unaffected").child(uuid);
-                                DatabaseUnaffected.addListenerForSingleValueEvent(new ValueEventListener() {
+
+                                DatabaseReference DatabaseUnaffected= FirebaseDatabase.getInstance().getReference("Unaffected");
+                                DatabaseUnaffected.orderByChild("mobile").equalTo(number).addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         for(DataSnapshot datas: dataSnapshot.getChildren()){
@@ -106,8 +105,8 @@ ImageView about;
                                     }
                                 });
                                 //User DB
-                                DatabaseReference User= FirebaseDatabase.getInstance().getReference("Users").child(uuid);
-                                User.addListenerForSingleValueEvent(new ValueEventListener() {
+                                DatabaseReference User= FirebaseDatabase.getInstance().getReference("Users");
+                                User.orderByChild("mobile").equalTo(number).addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                         for(DataSnapshot datas: dataSnapshot.getChildren()){
